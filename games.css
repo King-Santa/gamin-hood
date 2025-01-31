@@ -1,3 +1,4 @@
+/* General Reset */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -203,6 +204,8 @@ margin-bottom: 40px;
 .overlay p {
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Responsive Adjustments */
