@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <div class="checkout-container">
+        <h1>Checkout Summary</h1>
+
+        <!-- Summary Table -->
+        <div class="table-container">
+            <table id="summary-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price per Item</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Cart items will be inserted here -->
+                </tbody>
+            </table>
+
+            <!-- Total Price Section -->
+            <div id="total-section">
+                <p><strong>Total Amount: </strong><span id="total-amount">$0.00</span></p>
+            </div>
+        </div>
+
+        <!-- Personal Information Form -->
+        <div class="form-container">
+            <h2>Enter Your Details</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <!-- Payment Options -->
+                <div class="payment-options">
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="cash">Cash on Delivery</option>
+                        <option value="card">Credit/Debit Card</option>
+                    </select>
+                </div>
+
+                <div id="card-details" style="display: none;">
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="month" id="expiry-date" name="expiry-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv">
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" id="checkout-btn">Proceed to Payment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="Scripts/cart.js"></script> <!-- Your cart functions -->
+    <script src="Scripts/page to order.js"></script> <!-- Checkout-specific script -->
+</body>
+</html>

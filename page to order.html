@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Parts Order Page</title>
+    <link rel="stylesheet" href="orderpage.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="aboutus.html"><img src="images/logo-removebg-preview.png" alt="Logo"></a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="upcoming.html">Upcoming</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="events.html">Upcoming Events</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="page to order.html">ordering page</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Computer Parts Order Page</h1>
+            <p>Dive into the best gaming experiences, reviews, and top-rated titles. Let’s level up your journey!</p>
+        </div>
+    </div>
+
+<!-- Processors Section -->
+<section id="processors">
+    <h2>Processors</h2>
+    <div class="item">
+        <img src="images\product 1.jpg" alt="Intel Core i7">
+        <span>Intel Core i7</span>
+        <input type="number" id="quantity-i7" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Intel Core i7', 300, document.getElementById('quantity-i7').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 2.jpg" alt="AMD Ryzen 7">
+        <span>AMD Ryzen 7</span>
+        <input type="number" id="quantity-ryzen7" min="1" placeholder="Quantity">
+        <button onclick="addToCart('AMD Ryzen 7', 280, document.getElementById('quantity-ryzen7').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 3.jpg" alt="Intel Core i5">
+        <span>Intel Core i5</span>
+        <input type="number" id="quantity-i5" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Intel Core i5', 250, document.getElementById('quantity-i5').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 4.jpg" alt="AMD Ryzen 5">
+        <span>AMD Ryzen 5</span>
+        <input type="number" id="quantity-ryzen5" min="1" placeholder="Quantity">
+        <button onclick="addToCart('AMD Ryzen 5', 220, document.getElementById('quantity-ryzen5').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 5.jpg" alt="Intel Core i3">
+        <span>Intel Core i3</span>
+        <input type="number" id="quantity-i3" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Intel Core i3', 180, document.getElementById('quantity-i3').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 6.jpg" alt="AMD Ryzen 3">
+        <span>AMD Ryzen 3</span>
+        <input type="number" id="quantity-ryzen3" min="1" placeholder="Quantity">
+        <button onclick="addToCart('AMD Ryzen 3', 150, document.getElementById('quantity-ryzen3').value)">Add to Cart</button>
+    </div>
+</section>
+
+<!-- Graphic Cards Section -->
+<section id="graphic-cards">
+    <h2>Graphic Cards</h2>
+    <div class="item">
+        <img src="images\product7.jpg" alt="NVIDIA RTX 3080">
+        <span>NVIDIA RTX 3080</span>
+        <input type="number" id="quantity-rtx3080" min="1" placeholder="Quantity">
+        <button onclick="addToCart('NVIDIA RTX 3080', 700, document.getElementById('quantity-rtx3080').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 8.jpg" alt="AMD Radeon RX 6800">
+        <span>AMD Radeon RX 6800</span>
+        <input type="number" id="quantity-rx6800" min="1" placeholder="Quantity">
+        <button onclick="addToCart('AMD Radeon RX 6800', 650, document.getElementById('quantity-rx6800').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 9.jpg" alt="NVIDIA GTX 1660">
+        <span>NVIDIA GTX 1660</span>
+        <input type="number" id="quantity-gtx1660" min="1" placeholder="Quantity">
+        <button onclick="addToCart('NVIDIA GTX 1660', 220, document.getElementById('quantity-gtx1660').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 10.jpg" alt="AMD Radeon RX 5700">
+        <span>AMD Radeon RX 5700</span>
+        <input type="number" id="quantity-rx5700" min="1" placeholder="Quantity">
+        <button onclick="addToCart('AMD Radeon RX 5700', 400, document.getElementById('quantity-rx5700').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 11.jpg" alt="NVIDIA RTX 3070">
+        <span>NVIDIA RTX 3070</span>
+        <input type="number" id="quantity-rtx3070" min="1" placeholder="Quantity">
+        <button onclick="addToCart('NVIDIA RTX 3070', 500, document.getElementById('quantity-rtx3070').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 12.jpg" alt="AMD Radeon RX 5600">
+        <span>AMD Radeon RX 5600</span>
+        <input type="number" id="quantity-rx5600" min="1" placeholder="Quantity">
+        <button onclick="addToCart('AMD Radeon RX 5600', 300, document.getElementById('quantity-rx5600').value)">Add to Cart</button>
+    </div>
+</section>
+
+<!-- Motherboards Section -->
+<section id="motherboards">
+    <h2>Motherboards</h2>
+    <div class="item">
+        <img src="images\product 13.jpg" alt="Asus ROG Strix B550-F">
+        <span>Asus ROG Strix B550-F</span>
+        <input type="number" id="quantity-b550f" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Asus ROG Strix B550-F', 150, document.getElementById('quantity-b550f').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 14.jpg" alt="MSI MAG B550 TOMAHAWK">
+        <span>MSI MAG B550 TOMAHAWK</span>
+        <input type="number" id="quantity-b550t" min="1" placeholder="Quantity">
+        <button onclick="addToCart('MSI MAG B550 TOMAHAWK', 160, document.getElementById('quantity-b550t').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 15.jpg" alt="Gigabyte B550 AORUS PRO AC">
+        <span>Gigabyte B550 AORUS PRO AC</span>
+        <input type="number" id="quantity-b550aorus" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Gigabyte B550 AORUS PRO AC', 140, document.getElementById('quantity-b550aorus').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 16.jpg" alt="ASRock B450 Steel Legend">
+        <span>ASRock B450 Steel Legend</span>
+        <input type="number" id="quantity-b450" min="1" placeholder="Quantity">
+        <button onclick="addToCart('ASRock B450 Steel Legend', 130, document.getElementById('quantity-b450').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 17.jpg" alt="Asus TUF Gaming B550-PLUS">
+        <span>Asus TUF Gaming B550-PLUS</span>
+        <input type="number" id="quantity-tufb550" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Asus TUF Gaming B550-PLUS', 170, document.getElementById('quantity-tufb550').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 18.jpg" alt="MSI MPG Z490 GAMING EDGE WIFI">
+        <span>MSI MPG Z490 GAMING EDGE WIFI</span>
+        <input type="number" id="quantity-z490" min="1" placeholder="Quantity">
+        <button onclick="addToCart('MSI MPG Z490 GAMING EDGE WIFI', 220, document.getElementById('quantity-z490').value)">Add to Cart</button>
+    </div>
+</section>
+
+<!-- RAM Section -->
+<section id="ram">
+    <h2>RAM (Memory)</h2>
+    <div class="item">
+        <img src="images\product 19.jpg" alt="Corsair Vengeance LPX 16GB">
+        <span>Corsair Vengeance LPX 16GB</span>
+        <input type="number" id="quantity-corsair16" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Corsair Vengeance LPX 16GB', 80, document.getElementById('quantity-corsair16').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 20.jpg" alt="G.SKILL Ripjaws V 16GB">
+        <span>G.SKILL Ripjaws V 16GB</span>
+        <input type="number" id="quantity-ripjaws16" min="1" placeholder="Quantity">
+        <button onclick="addToCart('G.SKILL Ripjaws V 16GB', 85, document.getElementById('quantity-ripjaws16').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 21.jpg" alt="Crucial Ballistix 16GB">
+        <span>Crucial Ballistix 16GB</span>
+        <input type="number" id="quantity-crucial16" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Crucial Ballistix 16GB', 75, document.getElementById('quantity-crucial16').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 22.jpg" alt="Kingston HyperX Fury 16GB">
+        <span>Kingston HyperX Fury 16GB</span>
+        <input type="number" id="quantity-kingston16" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Kingston HyperX Fury 16GB', 70, document.getElementById('quantity-kingston16').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 23.jpg" alt="Corsair Vengeance LPX 8GB">
+        <span>Corsair Vengeance LPX 8GB</span>
+        <input type="number" id="quantity-corsair8" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Corsair Vengeance LPX 8GB', 40, document.getElementById('quantity-corsair8').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 24.jpg" alt="G.SKILL Ripjaws V 8GB">
+        <span>G.SKILL Ripjaws V 8GB</span>
+        <input type="number" id="quantity-ripjaws8" min="1" placeholder="Quantity">
+        <button onclick="addToCart('G.SKILL Ripjaws V 8GB', 45, document.getElementById('quantity-ripjaws8').value)">Add to Cart</button>
+    </div>
+</section>
+
+<!-- Storage Devices Section -->
+<section id="storage">
+    <h2>Storage Devices</h2>
+    <div class="item">
+        <img src="images\product 25.jpg" alt="Samsung 970 EVO 1TB SSD">
+        <span>Samsung 970 EVO 1TB SSD</span>
+        <input type="number" id="quantity-samsungssd" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Samsung 970 EVO 1TB SSD', 120, document.getElementById('quantity-samsungssd').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 26.jpg" alt="Seagate Barracuda 2TB HDD">
+        <span>Seagate Barracuda 2TB HDD</span>
+        <input type="number" id="quantity-seagate2tb" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Seagate Barracuda 2TB HDD', 55, document.getElementById('quantity-seagate2tb').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 27.jpg" alt="Western Digital 1TB HDD">
+        <span>Western Digital 1TB HDD</span>
+        <input type="number" id="quantity-wd1tb" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Western Digital 1TB HDD', 45, document.getElementById('quantity-wd1tb').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 28.jpg" alt="Crucial MX500 500GB SSD">
+        <span>Crucial MX500 500GB SSD</span>
+        <input type="number" id="quantity-crucialssd" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Crucial MX500 500GB SSD', 60, document.getElementById('quantity-crucialssd').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 29.jpg" alt="Kingston A2000 1TB SSD">
+        <span>Kingston A2000 1TB SSD</span>
+        <input type="number" id="quantity-kingstonssd" min="1" placeholder="Quantity">
+        <button onclick="addToCart('Kingston A2000 1TB SSD', 90, document.getElementById('quantity-kingstonssd').value)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <img src="images\product 30.jpg" alt="SanDisk Ultra 1TB SSD">
+        <span>SanDisk Ultra 1TB SSD</span>
+        <input type="number" id="quantity-sandisk1tb" min="1" placeholder="Quantity">
+        <button onclick="addToCart('SanDisk Ultra 1TB SSD', 100, document.getElementById('quantity-sandisk1tb').value)">Add to Cart</button>
+    </div>
+</section>
+
+<!-- Cart Table -->
+<h2>Your Cart</h2>
+<table id="cart-table">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="cart-body"></tbody>
+</table>
+
+<div>
+   
+    <button onclick="window.location.href='checkout.html'">Buy Now</button>
+    <button onclick="saveToFavourites()">Add to Favourites</button>
+    <button onclick="applyFavourites()">Apply Favourites</button>
+</div>
+
+<script src="Scripts/page to order.js"></script>
+</body>
+</html>
